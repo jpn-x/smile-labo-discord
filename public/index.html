@@ -94,48 +94,32 @@
   }
 
   /* ---------- Header ---------- */
-  .smiley-hero{
-    display:block;
-    width:100%;
-    height:auto;
-    max-height:180px;
-    object-fit:cover;
-    object-position:center 30%;
-  }
   header.hero{
-    padding:20px 0 20px;
-    text-align:center;
-  }
-  .mark{
-    width:64px;height:64px;
-    margin:0 auto 14px;
-    border-radius:50%;
-    background:var(--accent);
     position:relative;
-    box-shadow:var(--shadow);
+    width:100%;
+    padding:38px 20px 30px;
+    text-align:center;
+    overflow:hidden;
+    isolation:isolate;
   }
-  .mark::before,.mark::after{
-    content:"";
+  .hero-bg{
     position:absolute;
-    width:7px;height:9px;
-    border-radius:50%;
-    background:var(--accent-ink);
-    top:24px;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center 20%;
+    z-index:-1;
   }
-  .mark::before{left:19px;}
-  .mark::after{right:19px;}
-  .mark .mouth{
-    position:absolute;
-    left:50%;top:30px;
-    width:22px;height:11px;
-    border-radius:0 0 22px 22px;
-    border-bottom:4px solid var(--accent-ink);
-    transform:translateX(-50%);
+  .hero-content{
+    max-width:560px;
+    margin:0 auto;
   }
   header.hero h1{
     font-size:26px;
     font-weight:900;
     margin:0 0 8px;
+    text-shadow:0 0 14px var(--bg), 0 0 26px var(--bg);
   }
   .h1-icon{
     height:1em;
@@ -148,6 +132,7 @@
     color:var(--ink-soft);
     font-size:15px;
     margin:0;
+    text-shadow:0 0 10px var(--bg), 0 0 20px var(--bg);
   }
   .time-chip{
     display:inline-flex;
@@ -679,15 +664,16 @@
 </head>
 <body>
 
-<img src="/smiley-banner.png" alt="" class="smiley-hero">
-
-<div class="wrap">
-
-  <header class="hero">
+<header class="hero">
+  <img src="/smiley-banner.png" alt="" class="hero-bg">
+  <div class="hero-content">
     <h1><img src="/discord-icon.png" alt="" class="h1-icon">はじめてのDiscord</h1>
     <p>スマイルラボのメンバー専用ルームへようこそ</p>
     <span class="time-chip">⏱ だいたい3分でできます</span>
-  </header>
+  </div>
+</header>
+
+<div class="wrap">
 
   <div class="why-card">
     <b>なんでDiscordなの？</b>
