@@ -19,7 +19,7 @@
 <meta name="twitter:description" content="スマイルラボのDiscordサーバーへの入り方を3分で解説。">
 <meta name="twitter:image" content="https://smile-labo-discord.pages.dev/ogp.png">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=M+PLUS+Rounded+1c:wght@800&display=swap">
 <style>
   :root{
     --bg:#FFFBF2;
@@ -510,10 +510,10 @@
     max-width:300px;
     display:flex;
     align-items:center;
-    gap:12px;
+    gap:10px;
     padding:12px 18px;
-    background:#0E0B14;
-    border:1px solid #2A2438;
+    background:#060815;
+    border:1px solid rgba(255,255,255,.1);
     border-radius:14px;
     text-decoration:none;
   }
@@ -521,36 +521,16 @@
     margin:24px auto 0;
   }
   .hb-face{
-    position:relative;
     flex:none;
     width:34px;height:34px;
-    border-radius:50%;
-    background:#FFD23C;
-    box-shadow:0 0 6px #FFD23C, 0 0 16px rgba(255,210,60,.7);
-  }
-  .hb-eye{
-    position:absolute;
-    top:12px;
-    width:4px;height:5px;
-    border-radius:50%;
-    background:#0E0B14;
-  }
-  .hb-eye.l{left:10px;}
-  .hb-eye.r{right:10px;}
-  .hb-mouth{
-    position:absolute;
-    left:50%;top:16px;
-    width:12px;height:6px;
-    border-radius:0 0 12px 12px;
-    border-bottom:2px solid #0E0B14;
-    transform:translateX(-50%);
+    filter:drop-shadow(0 0 4px #fff04d) drop-shadow(0 0 14px #fff04d) drop-shadow(0 0 30px rgba(255,240,77,.55));
   }
   .hb-text{
-    font-family:"Zen Maru Gothic",sans-serif;
-    font-weight:900;
+    font-family:"M PLUS Rounded 1c",sans-serif;
+    font-weight:800;
     font-size:15px;
-    color:#FF3D9A;
-    text-shadow:0 0 6px rgba(255,61,154,.8), 0 0 16px rgba(255,61,154,.5);
+    color:#ff3ec8;
+    text-shadow:0 0 6px rgba(255,62,200,.85), 0 0 26px rgba(255,62,200,.45);
     text-align:left;
     letter-spacing:.02em;
   }
@@ -559,7 +539,7 @@
     font-family:"Noto Sans JP",sans-serif;
     font-weight:400;
     font-size:10.5px;
-    color:#B6ADC4;
+    color:#93a0c2;
     text-shadow:none;
     letter-spacing:0;
     margin-top:1px;
@@ -697,7 +677,7 @@
 <div class="wrap">
 
   <a class="home-banner top-banner" href="https://smile-labo.pages.dev/" target="_blank" rel="noopener">
-    <span class="hb-face"><span class="hb-eye l"></span><span class="hb-eye r"></span><span class="hb-mouth"></span></span>
+    <svg class="hb-face" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="43" fill="none" stroke="#fff04d" stroke-width="6"/><circle cx="33" cy="41" r="6" fill="#fff04d"/><circle cx="67" cy="41" r="6" fill="#fff04d"/><path d="M27 57 Q50 82 73 57" fill="none" stroke="#fff04d" stroke-width="7" stroke-linecap="round"/></svg>
     <span class="hb-text">SMILE LABO<small>by 信頼発電所</small></span>
   </a>
 
@@ -894,7 +874,7 @@
   <footer>
     SMILE LABO・Discordかんたんガイド
     <a class="home-banner" href="https://smile-labo.pages.dev/" target="_blank" rel="noopener">
-      <span class="hb-face"><span class="hb-eye l"></span><span class="hb-eye r"></span><span class="hb-mouth"></span></span>
+      <svg class="hb-face" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="43" fill="none" stroke="#fff04d" stroke-width="6"/><circle cx="33" cy="41" r="6" fill="#fff04d"/><circle cx="67" cy="41" r="6" fill="#fff04d"/><path d="M27 57 Q50 82 73 57" fill="none" stroke="#fff04d" stroke-width="7" stroke-linecap="round"/></svg>
       <span class="hb-text">SMILE LABO<small>by 信頼発電所</small></span>
     </a>
   </footer>
