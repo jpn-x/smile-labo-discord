@@ -22,4 +22,5 @@ jobs:
             echo "CLOUDFLARE_API_TOKEN not set; skipping Cloudflare deploy."
             exit 0
           fi
+          npx wrangler@4 pages project create smile-labo-discord --production-branch=main || true
           npx wrangler@4 pages deploy ./public --project-name=smile-labo-discord --branch=main --commit-dirty=true
