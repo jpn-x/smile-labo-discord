@@ -135,19 +135,6 @@
     -webkit-text-stroke:4px #fff;
     paint-order:stroke fill;
   }
-  .time-chip{
-    display:inline-flex;
-    align-items:center;
-    gap:6px;
-    margin-top:16px;
-    padding:7px 14px;
-    background:var(--surface);
-    border:1px solid var(--line);
-    border-radius:99px;
-    font-size:13px;
-    color:var(--ink-soft);
-    font-variant-numeric:tabular-nums;
-  }
 
   /* ---------- Why card ---------- */
   .why-card{
@@ -163,6 +150,29 @@
     font-size:14.5px;
     display:block;
     margin-bottom:6px;
+  }
+  .why-card-head{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:6px;
+  }
+  .why-card-head b{margin-bottom:0;}
+  .mini-chip{
+    flex:none;
+    display:inline-flex;
+    align-items:center;
+    gap:4px;
+    padding:4px 10px;
+    background:var(--bg);
+    border:1px solid var(--line);
+    border-radius:99px;
+    font-size:11px;
+    color:var(--ink-soft);
+    font-variant-numeric:tabular-nums;
+    white-space:nowrap;
   }
   .why-card p{
     margin:0;
@@ -669,7 +679,6 @@
   <img src="/smiley-banner.png" alt="" class="hero-bg">
   <div class="hero-content">
     <h1><img src="/discord-icon.png" alt="" class="h1-icon">はじめてのDiscord</h1>
-    <span class="time-chip">⏱ だいたい3分でできます</span>
     <p>スマイルラボのメンバー専用ルームへようこそ</p>
   </div>
 </header>
@@ -677,7 +686,10 @@
 <div class="wrap">
 
   <div class="why-card">
-    <b>なんでDiscordなの？</b>
+    <div class="why-card-head">
+      <b>なんでDiscordなの？</b>
+      <span class="mini-chip">⏱ だいたい3分でできます</span>
+    </div>
     <p>Discordは、音声でみんなとおしゃべりしたり、テキストチャットでやり取りしたりできる場所です。LINEのグループやZoomは、プライベートやお仕事で使ってる方も多いですよね。実はむらやんもDiscordは初めて使うので、みんなで一緒に慣れていきましょう！</p>
     <b class="why-more-title">覚えていくのはDiscordだけじゃありません</b>
     <p>株、AI、不動産、車、陸送、古物商、異業種ビジネス、人間関係、人生・恋愛・お悩み相談、遺品整理…いろんな業界の知識をみんなでシェアしながら、一緒にスキルアップしていく。それがスマイルラボの目指す「信頼でつながる仲間」の形です。最初の一歩、一緒に踏み出しましょう。気づけばすべてのプロフェッショナルになれる！</p>
